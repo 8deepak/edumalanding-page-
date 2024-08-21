@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#bg-custom{
+    background-color: #E1E9FD;
+    height: 2.6rem;
+    border-radius: 0px 10px 10px 0px;
+
+}
+#search{
+    
+    background-color: #E1E9FD;
+     border-radius: 10px 0px 0px 10px;
+     border-right: #E1E9FD;
+
+}
+.fa-search{
+    color: black;
+}
+.nav-item{
+    color: black;
+    font-weight: bold;
+}
+
+/* buttons */
+#vcourses{
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #082645;
+    border-radius: 10px 10px 10px 10px;
+    color: #082645;
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 35%;
+}
+#vcourses:hover{
+    background-color: #082645;
+    color: #FFFFFF;
+}
+#Csale:hover{
+    background-color: #082645;
+}
+#cyfa{
+    width: 40%;
+}
+.bone{
+    /* padding: 11px 52px 11px 52px; */
+}
+.home{
+    padding: 11px 52px 11px 52px;
+}
+/* home img */
+.banner{
+    height: 80%;
+    max-width: 90%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    
+
+    /* vertical-align: middle; */
+    /* display: inline-block; */
+    
+}
+.sfooter{
+    background-color: #EFF3F4;
+}
+.icon-size {
+    font-size: 1.5rem;
+}
+.svg-icon-size {
+    width: 1.5rem;   /* Adjust width */
+    height: 1.5rem; 
+}
+/* section two */
+.two{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+/* responsive */
+.partners {
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between logos */
+}
+
+.slide {
+    flex: 1 1 calc(20% - 20px); /* Adjust the width to show 5 items per row */
+    min-width: 100px; /* Set a minimum width for smaller screens */
+    max-width: 150px; /* Set a maximum width */
+    padding: 0px 15px 0px 15px;
+    
+}
+
+.slide img {
+    /* max-width: 100%; */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+@media (max-width: 768px) {
+    .slide {
+        flex: 1 1 calc(33.33% - 20px); /* Show 3 items per row on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .slide {
+        flex: 1 1 calc(50% - 20px); /* Show 2 items per row on small screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .slide {
+        flex: 1 1 calc(100% - 20px); /* Show 1 item per row on extra small screens */
+    }
+}
+/* popular course */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner .carousel-item {
+    transition: transform 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+#courseCarousel{
+    display: inline;
+    margin-left: 20rem;
+}
+#Passivespan{
+    color: #082645;
+    font-weight: 600;
+}
+#Passivespan:hover{
+    color: #0c0cd0;
+
+}
+.edumainstructor{
+    background-color: #ECEDEF;
+}
+h2.Become{
+    margin: 0px 0px -10px 0px;
+    font-size: 48px;
+    font-weight: 700;
+}
+h2.instructor{
+    font-size: 48px;
+    font-weight: 700;
+}
+.fingure-women{
+    right: auto;
+    left: ;
+}
