@@ -103,6 +103,13 @@ body {
     display: block;
     margin: 0 auto; /* Center the image */
 }
+@media  (max-width: 425px){
+    .bone{
+        margin-top: 0px;
+    }
+
+}
+    
 
 @media (max-width: 768px) {
     .slide {
@@ -110,6 +117,11 @@ body {
     }
     .fingure-women{
         width: -webkit-fill-available;
+    }
+    #cyfa{
+            width: 30%;
+            margin-top: 1.5rem;
+        
     }
    
 }
@@ -200,6 +212,13 @@ h2.instructor{
 }
 .abutton{
     transition: all .3s;
+}
+.weoffer{
+   background-color: #f5f7f8; 
+}
+.descending-order{
+    display: flex;
+    flex-direction: column-reverse;
 }
 /* popular caraousal  */
 /* testemonial  */
