@@ -7,15 +7,26 @@
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="cssn/owl.carousel.min.css">
     <!-- css cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
 <body>
+    <a id="buttonnn"></a>
+    <!-- whatssapp -->
+    <div class="wh-api">
+        <div class="wh-fixed whatsapp-pulse">
+            <a href="https://api.whatsapp.com/send?9354026737&text=hello world">
+                <button class="wh-ap-btn"></button>
+            </a>
+        </div>
+    </div>
     <!-- top Hero section    -->
     <header>
         <nav class="navbar bg-primary text-white">
@@ -61,7 +72,7 @@
                     </ul>
 
                 </div>
-                <form class="d-flex w-75 " role="search">
+                <form class="d-flex w-75 " id="search">
                     <span class="input-group-text" id="search"><a href=""><i class="fas fa-search"></i></a></span>
                     <input class="form-control  me-auto " type="search" id="bg-custom"
                         placeholder="Search for anything..." aria-label="Search">
@@ -161,7 +172,7 @@
                         features. This is Eduma - Education HTML,CSS Bootstrap Theme.</p>
                     <div class="mt-4 bone">
                         <button class="btn btn-outline-dark  ms-lg-4 mt-lg-0 mt-4 fw-bold" id="vcourses">Create
-                            YourAccount
+                            Account
                             Free <i class="fas fa-angel-right ps-3"></i></button>
                         <button class="btn btn-outline-dark  ms-lg-4 mt-lg-0 mt-4 fw-bold" id="vcourses">View Courses <i
                                 class="fas fa-angel-right ps-3"></i></button>
@@ -174,49 +185,165 @@
             </div>
         </div>
     </section>
+
     <!-- our partners  -->
     <section class="my-5 ">
         <div class="container two">
             <H2 class="pb-3 two ">more than 1,300 customers trust eduma</H2>
             <div class="partners slider d-flex">
-                <div class="slide"><img
+                <div class="slidec"><img
                         src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/customer-logo-6-150x60.png"
                         alt="">
                 </div>
-                <div class="slide"><img
+                <div class="slidec"><img
                         src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/customer-logo-5-150x60.png"
                         alt="">
                 </div>
-                <div class="slide"><img
+                <div class="slidec"><img
                         src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/customer-logo-4-150x60.png"
                         width="150" height="60" alt="">
                 </div>
-                <div class="slide"><img
+                <div class="slidec"><img
                         src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/customer-logo-6-150x60.png"
                         alt="">
                 </div>
-                <div class="slide"><img
+                <div class="slidec"><img
                         src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/customer-logo-1.png"
                         alt="">
                 </div>
-                <div class="slide"><img
+                <!-- <div class="slidec"><img
                         src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/customer-logo-2.png"
                         alt="">
                 </div>
-                <div class="slide"><img
+                <div class="slidec"><img
                         src=" https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/customer-logo-3.png"
                         alt="">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular courses -->
+    <section>
+        <div class="container mt-5">
+            <div class="d-flex flex-wrap  py-4 mt-4 ">
+                <div class="col-md-6 col-lg-6 col-12 d-flex  ">
+                    <h2 class="fw-bold d-flex fs-1"><span class="text-primary">Popular&nbsp;</span>
+                        Courses</h2>
+
+                </div>
+                <!-- <div class="col-md-3 d-flex"></div> -->
+                <div class="col-md-6 d-flex justify-content-end">
+                    <a href="" class="text-decoration-none text-dark pt-3"><span class="fw-bold">See
+                            More </span><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div id="courseCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3" id="popularcards">
+                                <div class="card">
+                                    <div class="category-badge">Coaching</div>
+                                    <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2022/10/eduma-learnpress-lms-4-675x450.png"
+                                        class="card-img-top" alt="How To Create An Online Course">
+                                    <div class="card-body">
+                                        <h5 class="card-title">How To Create An Online Course</h5>
+                                        <p class="card-text">Keny White</p>
+                                        <p class="card-text">The jQuery team knows all about cross-browser issues, and
+                                            they
+                                            have...</p>
+                                        <p class="lessons-count"><i class="fas fa-book-open me-2"></i>0 Lessons</p>
+                                        <p class="price text-primary">$30.00</p>
+                                        <button class="btn btn-primary w-100"><i class="fas fa-play me-2"></i>Start
+                                            Learning</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3" id="popularcards">
+                                <div class="card">
+                                    <div class="category-badge">Coaching</div>
+                                    <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2022/10/course-4-675x450.jpg"
+                                        alt="The Complete Online Teaching Masterclass">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Complete Online Teaching Masterclass</h5>
+                                        <p class="card-text">Keny White</p>
+                                        <p class="card-text">In this course, We'll learn how to create websites by
+                                            structuring and...</p>
+                                        <p class="lessons-count"><i class="fas fa-book-open me-2"></i>0 Lessons</p>
+                                        <p class="price text-primary"><del>$36.00</del> $25.00</p>
+                                        <button class="btn  btn-primary w-100"><i class="fas fa-play me-2"></i>Start
+                                            Learning</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3" id="popularcards">
+                                <div class="card">
+                                    <div class="category-badge">Language Learning</div>
+                                    <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2022/12/Introduction-learnpress-lms-plugin-4-675x450.png"
+                                        class="card-img-top" alt="Introduction LearnPress - LMS Plugin">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Introduction LearnPress - LMS Plugin</h5>
+                                        <p class="card-text">Keny White</p>
+                                        <p class="card-text">A WordPress LMS Plugin to create WordPress Learning
+                                            Management...</p>
+                                        <p class="lessons-count"><i class="fas fa-book-open me-2"></i>15 Lessons</p>
+                                        <p class="price ">Free</p>
+                                        <button class="btn  btn-primary w-100"><i class="fas fa-play me-2"></i>Start
+                                            Learning</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3" id="popularcards">
+                                <div class="card">
+                                    <div class="category-badge">Coaching</div>
+                                    <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2022/11/create-an-lms-website-with-learnpress-4-675x450.png"
+                                        class="card-img-top" alt="Create An LMS Website With LearnPress">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Create An LMS Website With LearnPress</h5>
+                                        <p class="card-text">Keny White</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet. Qui incidunt dolores non
+                                            similique...</p>
+                                        <p class="lessons-count"><i class="fas fa-book-open me-2"></i>14 Lessons</p>
+                                        <p class="price">Free</p>
+                                        <button class="btn  btn-primary w-100"><i class="fas fa-play me-2"></i>Start
+                                            Learning</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#courseCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#courseCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#courseCarousel" data-bs-slide-to="1" class="active"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#courseCarousel" data-bs-slide-to="2" class="active"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#courseCarousel" data-bs-slide-to="3" class="active"
+                        aria-label="Slide 4"></button>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Popular courses -->
+
     <!-- Outstanding categories -->
     <section class="album pb-5">
         <div class="container ">
             <div class="d-flex flex-wrap  py-4 mt-4 ">
                 <div class="col-md-6 col-lg-6 col-12 d-flex  ">
-                    <h2 class="fw-bold d-flex fs-1"><span class="text-primary">Outstanding </span>
+                    <h2 class="fw-bold d-flex fs-1"><span class="text-primary">Outstanding&nbsp;</span>
                         categories</h2>
 
                 </div>
@@ -228,24 +355,19 @@
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <a href="" class="text-decoration-none">
-                    <div class="col mb-5 ">
+                    <div class="col mb-3">
                         <div class="card shadow-sm rounded-4 border-0">
                             <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2024/01/coaching-category-380x126.jpg"
                                 class="rounded-top-4" alt="">
-
                             <div class="card-body bg-light  text-center pt-1" id="cbody">
                                 <span class=" fs-4" id="Passivespan">Coaching</span>
-
                                 <p class="pt-1 fs-5">14 Course</p>
-
                             </div>
-
-
                         </div>
                     </div>
                 </a>
                 <a href="" class="text-decoration-none">
-                    <div class="col ">
+                    <div class="col mb-3 ">
 
 
                         <div class="card shadow-sm rounded-4 border-0">
@@ -264,7 +386,7 @@
                     </div>
                 </a>
                 <a href="" class="text-decoration-none">
-                    <div class="col  ">
+                    <div class="col mb-3">
                         <div class="card shadow-sm rounded-4 border-0">
                             <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2024/01/language-learning-380x126.jpg"
                                 class="rounded-top-4" alt="">
@@ -279,9 +401,7 @@
                 </a>
 
                 <a href="" class="text-decoration-none">
-                    <div class="col mb-5">
-
-
+                    <div class="col mb-3">
                         <div class="card shadow-sm rounded-4 border-0">
                             <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2024/01/passive-income-380x126.jpg"
                                 class="rounded-top-4" alt="">
@@ -290,17 +410,12 @@
                                 <span class=" fs-4" id="Passivespan">Passive Income</span>
 
                                 <p class="pt-1 fs-5">15 Course</p>
-
                             </div>
-
-
                         </div>
                     </div>
                 </a>
                 <a href="" class="text-decoration-none">
-                    <div class="col ">
-
-
+                    <div class="colmb-3  ">
                         <div class="card shadow-sm rounded-4 border-0">
                             <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/category-box-6-380x126.jpg"
                                 class="rounded-top-4" alt="">
@@ -309,17 +424,12 @@
                                 <span class=" fs-4" id="Passivespan">Photography</span>
 
                                 <p class="pt-1 fs-5">14 Course</p>
-
                             </div>
-
-
                         </div>
                     </div>
                 </a>
                 <a href="" class="text-decoration-none">
-                    <div class="col ">
-
-
+                    <div class="colmb-3  ">
                         <div class="card shadow-sm rounded-4 border-0">
                             <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/category-box-5-380x126.jpg"
                                 class="rounded-top-4" alt="">
@@ -330,13 +440,11 @@
                                 <p class="pt-1 fs-5">14 Course</p>
 
                             </div>
-
-
                         </div>
                     </div>
                 </a>
                 <a href="" class="text-decoration-none">
-                    <div class="col ">
+                    <div class="col mb-3  ">
                         <div class="card shadow-sm rounded-4 border-0">
                             <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2024/01/teaching-online-380x126.jpg"
                                 class="rounded-top-4" alt="">
@@ -349,7 +457,7 @@
                     </div>
                 </a>
                 <a href="" class="text-decoration-none">
-                    <div class="col ">
+                    <div class="col mb-3 ">
                         <div class="card shadow-sm rounded-4 border-0">
                             <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/category-box-8-380x126.jpg"
                                 class="rounded-top-4" alt="">
@@ -366,7 +474,7 @@
                     </div>
                 </a>
                 <a href="" class="text-decoration-none">
-                    <div class="col ">
+                    <div class="col mb-3">
                         <div class="card shadow-sm rounded-4 border-0">
                             <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2024/01/video-creation-380x126.jpg"
                                 class="rounded-top-4" alt="">
@@ -375,7 +483,6 @@
                                 <span class=" fs-4" id="Passivespan">Video Creation</span>
 
                                 <p class="pt-1 fs-5">3 Course</p>
-
                             </div>
                         </div>
                     </div>
@@ -383,34 +490,8 @@
             </div>
         </div>
     </section>
-    <!-- what we are offer  -->
-    <!-- Online Learning fingureprint  -->
-    <section class="fingureprint ">
-        <div class="container">
-            <div class="rown row align-items-center text-lg-start ">
-                <div class="col-12 col-lg-6 col-md-6 ">
-                    <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/06/get-app-1.png"
-                        width="500" height="500" class="women-phone" alt="">
-                </div>
-                <div class="col-12 col-lg-6 col-md-6  ">
-                    <h2 class="Become text-white" id="">Online Learning Now in Your </h2>
-                    <h2 class="instructor text-white">Fingerprints</h2>
-                    <p class=" py-3 text-white">Lorem Ipsum is simply dummy text of the printing and
-                        typesetting
-                        industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, ...</p>
-                    <div class="storebutton d-flex mb-4">
-                        <a href="" id="abutton" class="abutton"><img
-                                src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/ch-play-1.png"
-                                width="160" height="44" class="playstore" alt=""></button></a>
-                        <a href=""><img
-                                src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/app-store-1.png"
-                                width="200" height="44" class="applestore" alt=""></button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    <!-- what we are offer -->
     <section class="weoffer">
         <div class="container px-4 py-5" id="featured-3">
             <h2 class="pb-2  fs-1 fw-bold text-center">What to expect from a <span class="text-primary fs-1">Eduma
@@ -576,6 +657,271 @@
             </div>
         </div>
     </section>
+    <!-- testimonial section---------------->
+    <!-- <section>
+        <div class="container my-5">
+            <div class="d-flex flex-wrap  py-4 mt-4 ">
+                <div class="col-md-6 col-lg-6 col-12 d-flex  ">
+                    <h2 class="fw-bold d-flex fs-1"><span class="text-primary">Testimonial</span></h2>
+
+                </div>
+                <!-- <div class="col-md-3 d-flex"></div> -->
+    <!-- <div class="col-md-6 d-flex justify-content-end">
+                    <a href="" class="text-decoration-none text-dark pt-3"><span class="fw-bold">See
+                            More </span><i class="fa-solid fa-arrow-right"></i></a>
+                </div> -->
+    </div>
+
+    <!-- <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-carousel">
+                            <div class="testimonial-content">
+                                <div class="quote-mark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_127_489)">
+                                            <path
+                                                d="M59.3642 47.5379C58.9262 46.2659 57.9182 45.6659 56.7542 45.1379C54.1812 44.0547 51.9145 42.3546 50.1542 40.1879C48.5167 38.0033 47.4263 35.4583 46.9742 32.7659C46.7351 31.417 46.5828 30.0542 46.5182 28.6859C46.5182 28.2839 46.5842 28.1639 46.9982 28.1699C49.7462 28.1699 52.4882 28.1699 55.2302 28.1699C57.2642 28.1699 58.4402 27.0059 58.4402 24.9839L58.4402 6.83387C58.4402 4.77587 57.2402 3.59987 55.2062 3.59987L37.1102 3.59987C35.0162 3.59987 33.8582 4.76387 33.8582 6.86987C33.8582 11.9099 33.8582 16.9559 33.8582 21.9959C33.839 26.1891 34.1782 30.3764 34.8722 34.5119C35.8512 40.1687 38.6889 45.3374 42.9362 49.1999C45.8529 51.8837 49.21 54.0452 52.8602 55.5899C53.2052 55.7696 53.5834 55.8766 53.9715 55.9041C54.3595 55.9315 54.7491 55.8789 55.1159 55.7495C55.4828 55.6201 55.8191 55.4166 56.104 55.1518C56.3889 54.8869 56.6164 54.5663 56.7722 54.2099C57.6602 52.3799 58.6082 50.5739 59.3642 48.6779L59.3642 47.5379Z"
+                                                fill="#8392A2"></path>
+                                            <path
+                                                d="M12.3062 3.60011L3.30621 3.60011C1.14621 3.60011 0.000204834 4.74011 0.000205024 6.91211C0.000205463 11.9341 0.000205901 16.9381 0.000206342 21.9841C-0.0102527 26.3097 0.371308 30.6274 1.14021 34.8841C2.62821 42.8041 7.14021 48.5461 13.7402 52.8841C15.4046 53.9375 17.1548 54.8487 18.9722 55.6081C19.3356 55.8042 19.7368 55.9203 20.1487 55.9487C20.5607 55.9771 20.974 55.9172 21.3609 55.7728C21.7478 55.6285 22.0994 55.4032 22.3921 55.112C22.6848 54.8207 22.9119 54.4703 23.0582 54.0841C23.7662 52.6081 24.4682 51.1301 25.1642 49.6501C26.0042 47.8501 25.4342 46.2661 23.6222 45.4501C21.5271 44.5666 19.5883 43.351 17.8802 41.8501C15.6799 39.7671 14.1437 37.0808 13.4642 34.1281C13.014 32.3311 12.7625 30.49 12.7142 28.6381C12.7142 28.2181 12.8402 28.1701 13.1942 28.1701C15.9002 28.1701 18.5942 28.1221 21.3062 28.1701C21.743 28.2025 22.1816 28.1412 22.5927 27.9902C23.0038 27.8392 23.3779 27.6021 23.6899 27.2947C24.0018 26.9872 24.2444 26.6167 24.4014 26.2078C24.5584 25.799 24.6262 25.3613 24.6002 24.9241C24.5642 18.8941 24.6002 12.8701 24.6002 6.8401C24.6002 4.78211 23.4002 3.60011 21.3722 3.60011L12.3062 3.60011Z"
+                                                fill="#8392A2"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_127_489">
+                                                <rect width="60" height="60" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="col-12">
+                                    <p class="mb-4">LearnPress is a WordPress complete solution for creating a Learning
+                                        Management System (LMS). It can help me to create courses, lessons and quizzes
+                                        and
+                                        manage them as easy as I want. I've learned a lot, and I highly recommend it.
+                                        Thank
+                                        you.
+                                    </p>
+                                    <p class="fw-bold mb-0">Bennett Cu
+                                        / Front-end Developer</p>
+                                </div>
+                            </div>
+                            <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/08/home-testimonial.jpg"
+                                alt="Bennett Cu" class="testimonial-image">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-carousel">
+                            <div class="testimonial-content">
+                                <div class="quote-mark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_127_489)">
+                                            <path
+                                                d="M59.3642 47.5379C58.9262 46.2659 57.9182 45.6659 56.7542 45.1379C54.1812 44.0547 51.9145 42.3546 50.1542 40.1879C48.5167 38.0033 47.4263 35.4583 46.9742 32.7659C46.7351 31.417 46.5828 30.0542 46.5182 28.6859C46.5182 28.2839 46.5842 28.1639 46.9982 28.1699C49.7462 28.1699 52.4882 28.1699 55.2302 28.1699C57.2642 28.1699 58.4402 27.0059 58.4402 24.9839L58.4402 6.83387C58.4402 4.77587 57.2402 3.59987 55.2062 3.59987L37.1102 3.59987C35.0162 3.59987 33.8582 4.76387 33.8582 6.86987C33.8582 11.9099 33.8582 16.9559 33.8582 21.9959C33.839 26.1891 34.1782 30.3764 34.8722 34.5119C35.8512 40.1687 38.6889 45.3374 42.9362 49.1999C45.8529 51.8837 49.21 54.0452 52.8602 55.5899C53.2052 55.7696 53.5834 55.8766 53.9715 55.9041C54.3595 55.9315 54.7491 55.8789 55.1159 55.7495C55.4828 55.6201 55.8191 55.4166 56.104 55.1518C56.3889 54.8869 56.6164 54.5663 56.7722 54.2099C57.6602 52.3799 58.6082 50.5739 59.3642 48.6779L59.3642 47.5379Z"
+                                                fill="#8392A2"></path>
+                                            <path
+                                                d="M12.3062 3.60011L3.30621 3.60011C1.14621 3.60011 0.000204834 4.74011 0.000205024 6.91211C0.000205463 11.9341 0.000205901 16.9381 0.000206342 21.9841C-0.0102527 26.3097 0.371308 30.6274 1.14021 34.8841C2.62821 42.8041 7.14021 48.5461 13.7402 52.8841C15.4046 53.9375 17.1548 54.8487 18.9722 55.6081C19.3356 55.8042 19.7368 55.9203 20.1487 55.9487C20.5607 55.9771 20.974 55.9172 21.3609 55.7728C21.7478 55.6285 22.0994 55.4032 22.3921 55.112C22.6848 54.8207 22.9119 54.4703 23.0582 54.0841C23.7662 52.6081 24.4682 51.1301 25.1642 49.6501C26.0042 47.8501 25.4342 46.2661 23.6222 45.4501C21.5271 44.5666 19.5883 43.351 17.8802 41.8501C15.6799 39.7671 14.1437 37.0808 13.4642 34.1281C13.014 32.3311 12.7625 30.49 12.7142 28.6381C12.7142 28.2181 12.8402 28.1701 13.1942 28.1701C15.9002 28.1701 18.5942 28.1221 21.3062 28.1701C21.743 28.2025 22.1816 28.1412 22.5927 27.9902C23.0038 27.8392 23.3779 27.6021 23.6899 27.2947C24.0018 26.9872 24.2444 26.6167 24.4014 26.2078C24.5584 25.799 24.6262 25.3613 24.6002 24.9241C24.5642 18.8941 24.6002 12.8701 24.6002 6.8401C24.6002 4.78211 23.4002 3.60011 21.3722 3.60011L12.3062 3.60011Z"
+                                                fill="#8392A2"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_127_489">
+                                                <rect width="60" height="60" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="col-12"></div>
+                                <p class="mb-4">LearnPress is a WordPress complete solution for creating a Learning
+                                    Management System (LMS). It can help me to create courses, lessons and quizzes and
+                                    manage them as easy as I want. I've learned a lot, and I highly recommend it. Thank
+                                    you.
+                                </p>
+                                <p class="fw-bold mb-0">Bennett Cu
+                                    / Front-end Developer</p>
+                            </div>
+                            <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/08/home-testimonial.jpg"
+                                alt="Sarah Johnson" class="testimonial-image">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-carousel">
+                            <div class="testimonial-content">
+                                <div class="quote-mark"> <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                        viewBox="0 0 60 60" fill="none">
+                                        <g clip-path="url(#clip0_127_489)">
+                                            <path
+                                                d="M59.3642 47.5379C58.9262 46.2659 57.9182 45.6659 56.7542 45.1379C54.1812 44.0547 51.9145 42.3546 50.1542 40.1879C48.5167 38.0033 47.4263 35.4583 46.9742 32.7659C46.7351 31.417 46.5828 30.0542 46.5182 28.6859C46.5182 28.2839 46.5842 28.1639 46.9982 28.1699C49.7462 28.1699 52.4882 28.1699 55.2302 28.1699C57.2642 28.1699 58.4402 27.0059 58.4402 24.9839L58.4402 6.83387C58.4402 4.77587 57.2402 3.59987 55.2062 3.59987L37.1102 3.59987C35.0162 3.59987 33.8582 4.76387 33.8582 6.86987C33.8582 11.9099 33.8582 16.9559 33.8582 21.9959C33.839 26.1891 34.1782 30.3764 34.8722 34.5119C35.8512 40.1687 38.6889 45.3374 42.9362 49.1999C45.8529 51.8837 49.21 54.0452 52.8602 55.5899C53.2052 55.7696 53.5834 55.8766 53.9715 55.9041C54.3595 55.9315 54.7491 55.8789 55.1159 55.7495C55.4828 55.6201 55.8191 55.4166 56.104 55.1518C56.3889 54.8869 56.6164 54.5663 56.7722 54.2099C57.6602 52.3799 58.6082 50.5739 59.3642 48.6779L59.3642 47.5379Z"
+                                                fill="#8392A2"></path>
+                                            <path
+                                                d="M12.3062 3.60011L3.30621 3.60011C1.14621 3.60011 0.000204834 4.74011 0.000205024 6.91211C0.000205463 11.9341 0.000205901 16.9381 0.000206342 21.9841C-0.0102527 26.3097 0.371308 30.6274 1.14021 34.8841C2.62821 42.8041 7.14021 48.5461 13.7402 52.8841C15.4046 53.9375 17.1548 54.8487 18.9722 55.6081C19.3356 55.8042 19.7368 55.9203 20.1487 55.9487C20.5607 55.9771 20.974 55.9172 21.3609 55.7728C21.7478 55.6285 22.0994 55.4032 22.3921 55.112C22.6848 54.8207 22.9119 54.4703 23.0582 54.0841C23.7662 52.6081 24.4682 51.1301 25.1642 49.6501C26.0042 47.8501 25.4342 46.2661 23.6222 45.4501C21.5271 44.5666 19.5883 43.351 17.8802 41.8501C15.6799 39.7671 14.1437 37.0808 13.4642 34.1281C13.014 32.3311 12.7625 30.49 12.7142 28.6381C12.7142 28.2181 12.8402 28.1701 13.1942 28.1701C15.9002 28.1701 18.5942 28.1221 21.3062 28.1701C21.743 28.2025 22.1816 28.1412 22.5927 27.9902C23.0038 27.8392 23.3779 27.6021 23.6899 27.2947C24.0018 26.9872 24.2444 26.6167 24.4014 26.2078C24.5584 25.799 24.6262 25.3613 24.6002 24.9241C24.5642 18.8941 24.6002 12.8701 24.6002 6.8401C24.6002 4.78211 23.4002 3.60011 21.3722 3.60011L12.3062 3.60011Z"
+                                                fill="#8392A2"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_127_489">
+                                                <rect width="60" height="60" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg></div>
+                                <div class="col-12">
+                                    <p class="mb-4">LearnPress is a WordPress complete solution for creating a Learning
+                                        Management System (LMS). It can help me to create courses, lessons and quizzes
+                                        and
+                                        manage them as easy as I want. I've learned a lot, and I highly recommend it.
+                                        Thank
+                                        you.
+                                    </p>
+                                    <p class="fw-bold mb-0">Bennett Cu
+                                        / Front-end Developer</p>
+                                </div>
+                            </div>
+                            <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/08/home-testimonial.jpg"
+                                alt="Michael Lee" class="testimonial-image">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
+    <!-- <div class="carousel-indicators ">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active "
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class=" "
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class=""
+                        aria-label="Slide 3"></button>
+                </div>
+            </div> 
+        </div>
+    </section> -->
+
+    <!-- Online Learning fingureprint  -->
+    <section class="fingureprint ">
+        <div class="container">
+            <div class="rown row align-items-center text-lg-start ">
+                <div class="col-12 col-lg-6 col-md-6 ">
+                    <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/06/get-app-1.png"
+                        width="500" height="500" class="women-phone" alt="">
+                </div>
+                <div class="col-12 col-lg-6 col-md-6  ">
+                    <h2 class="Become text-white" id="">Online Learning Now in Your </h2>
+                    <h2 class="instructor text-white">Fingerprints</h2>
+                    <p class=" py-3 text-white">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting
+                        industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, ...</p>
+                    <div class="storebutton d-flex mb-4">
+                        <a href="" id="abutton" class="abutton"><img
+                                src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/ch-play-1.png"
+                                width="160" height="44" class="playstore" alt=""></button></a>
+                        <a href=""><img
+                                src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2023/05/app-store-1.png"
+                                width="200" height="44" class="applestore" alt=""></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- latest News -->
+    <section>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="d-flex flex-wrap  py-4 mt-4 ">
+                    <div class="col-md-6 col-lg-6 col-12 d-flex  ">
+                        <h2 class="fw-bold d-flex fs-1"><span class="text-primary">Latest&nbsp;</span>
+                            News</h2>
+
+                    </div>
+                    <!-- <div class="col-md-3 d-flex"></div> -->
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <a href="" class="text-decoration-none text-dark pt-3"><span class="fw-bold">See
+                                More </span><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card latest">
+                            <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2015/12/courses-5.jpg"
+                                alt="">
+
+                            <div class="card-body " style="background-color:#F0F8FF">
+                                <h5>LMS WordPress Plugin</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-dark">Blog</button>
+                                        <button type="button" class="btn btn-sm btn-outline-dark">25/07/2024</button>
+                                    </div>
+                                    <small class="text-dark">Read More<span class="triangle-right"><i
+                                                class="fa-solid fa-arrow-right"></i></span> </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card latest">
+                            <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2015/12/courses-2-768x443.jpg"
+                                alt="">
+                            <div class="card-body" style="background-color:#F0F8FF">
+                                <h5>Admin Earns Scholarship</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-dark">Blog </button>
+                                        <button type="button" class="btn btn-sm btn-outline-dark">20/08/2024</button>
+                                    </div>
+                                    <small class="text-dark">Read More <span class="triangle-right"><i
+                                                class="fa-solid fa-arrow-right"></i></span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card latest">
+                            <img src="https://eduma.thimpress.com/demo-marketplace/wp-content/uploads/sites/99/2015/06/courses-13-768x443.jpg"
+                                alt="">
+
+                            <div class="card-body" style="background:#F0F8FF;
+">
+                                <h5>Forensic Team Earns Several</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-dark">Blog</button>
+                                        <button type="button" class="btn btn-sm btn-outline-dark">09/09/2024</button>
+                                    </div>
+                                    <small class=" text-dark">Read More <span class="triangle-right"><i
+                                                class="fa-solid fa-arrow-right"></i></span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Become Eduma instructor  -->
     <section class="edumainstructor ">
         <div class="container">
@@ -596,9 +942,6 @@
             </div>
         </div>
     </section>
-    <!-- testimonial -->
-
-
 
     <!-- Footer -->
     <div class="container">
@@ -611,7 +954,7 @@
                 <button class="btn btn-outline-dark   mt-lg-2 mt-4   fw-bold" id="Csale">Contact Sale
                 </button>
             </div>
-            <div class="col mb-3 ">
+            <div class="col mb-3 foot ">
                 <h5 class="fw-bold">Categories</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted "> Design</a>
@@ -720,6 +1063,7 @@
             </div>
         </footer>
     </div>
+
     <!-- small footer -->
     <div class=" container-fluid sfooter">
         <footer class="d-flex flex-wrap  py-3 mt-4 ">
@@ -733,11 +1077,11 @@
 
             </div>
             <div class="col-md-3 d-flex"></div>
-            <div class="col-md-3 d-flex justify-content-end">
-                <span>Contact With Us</span>
+            <div class="col-md-3 d-flex justify-content-center">
+                <span class="contactwithus">Contact With Us</span>
             </div>
 
-            <ul class="nav col-md-3 justify-content-start list-unstyled d-flex ">
+            <ul class="nav col-md-3 list-unstyled d-flex " id="iconsfooter">
 
                 <li class="ms-3"><a href="https://facebook.com" aria-label="Facebook">
                         <i aria-hidden="true" class="fab fa-facebook text-dark icon-size "></i>
@@ -766,6 +1110,60 @@
     </div>
 
     <!-- END OF TESTIMONIALS -->
+    <script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Carousel functionality
+            $('.carousel').each(function () {
+                var $carousel = $(this);
+                var itemsPerSlide = 2;
+                var totalItems = $('.carousel-item', $carousel).length;
+
+                $('.carousel-item', $carousel).each(function () {
+                    var next = $(this).next();
+                    if (!next.length) {
+                        next = $(this).siblings(':first');
+                    }
+                    next.children(':first-child').clone().appendTo($(this));
+
+                    for (var i = 0; i < itemsPerSlide - 2; i++) {
+                        next = next.next();
+                        if (!next.length) {
+                            next = $(this).siblings(':first');
+                        }
+                        next.children(':first-child').clone().appendTo($(this));
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- testimonial js  -->
+    <script>
+        $(document).ready(function () {
+            $('#testimonialCarousel').carousel({
+                interval: 5000
+            });
+
+            // Enable swiping for touch devices
+            $("#testimonialCarousel").on("touchstart", function (event) {
+                var xClick = event.originalEvent.touches[0].pageX;
+                $(this).one("touchmove", function (event) {
+                    var xMove = event.originalEvent.touches[0].pageX;
+                    if (Math.floor(xClick - xMove) > 5) {
+                        $(this).carousel('next');
+                    }
+                    else if (Math.floor(xClick - xMove) < -5) {
+                        $(this).carousel('prev');
+                    }
+                });
+                $("#testimonialCarousel").on("touchend", function () {
+                    $(this).off("touchmove");
+                });
+            });
+        });
+    </script>
 
 </body>
 
